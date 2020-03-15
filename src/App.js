@@ -89,7 +89,7 @@ function App() {
     useEffect(setupAudioTransmission, []);
 
     return (
-        <div style={{height: "100vh", display: "flex", justifyContent: "center", backgroundColor: "#f3f3f3"}}>
+        <div style={{height: "100vh", display: "flex", justifyContent: "center"}}>
             <div style={{maxWidth: "800px", display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center"}}>
                 <SoundCircle width={canvasSize}
                              height={canvasSize}
