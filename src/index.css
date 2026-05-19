@@ -17,11 +17,18 @@ code {
 
 label {
   display: block;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.2rem;
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #8a939e;
+}
+
+.range-description {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  color: #6b737d;
 }
 
 input[type="range"] {
@@ -83,6 +90,45 @@ input[type="range"] + span {
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.slider-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.25rem;
+  row-gap: 0.25rem;
+}
+
+.presets {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.preset-button {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e6e8eb;
+  background: rgba(29, 185, 84, 0.08);
+  border: 1px solid rgba(29, 185, 84, 0.3);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.preset-button:hover {
+  background: rgba(29, 185, 84, 0.18);
+  border-color: rgba(29, 185, 84, 0.55);
+}
+
+.preset-button:active {
+  transform: scale(0.97);
 }
 
 canvas {
