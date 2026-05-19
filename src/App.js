@@ -107,7 +107,7 @@ function App() {
                              maxAudioLevel={maxAudioLevel}
                              radius={radius}/>
 
-                <div style={{width: "200px", padding: "1rem", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                <div className="controls" style={{width: "200px", padding: "1.25rem", display: "flex", flexDirection: "column", alignItems: "center"}}>
                     <Range label="Radius"
                            min={1}
                            max={200}
